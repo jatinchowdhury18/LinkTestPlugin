@@ -1,4 +1,5 @@
 #include "LinkTestPlugin.h"
+#include "PluginEditor.h"
 
 LinkTestPlugin::LinkTestPlugin() = default;
 
@@ -12,7 +13,7 @@ void LinkTestPlugin::processAudioBlock ([[maybe_unused]] juce::AudioBuffer<float
 
 juce::AudioProcessorEditor* LinkTestPlugin::createEditor()
 {
-    return new chowdsp::ParametersViewEditor { *this, state, state.params };
+    return new PluginEditor { *this };
 }
 
 // This creates new instances of the plugin

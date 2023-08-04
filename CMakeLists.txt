@@ -55,7 +55,6 @@ endif()
 
 add_subdirectory(src)
 include_directories(src)
-add_subdirectory(res)
 
 target_compile_definitions(LinkTestPlugin PUBLIC
     JUCE_VST3_CAN_REPLACE_VST2=0
