@@ -1,10 +1,6 @@
 # LinkTestPlugin
 
-![CI](https://github.com/Chowdhury-DSP/LinkTestPlugin/workflows/CI/badge.svg)
-[![License](https://img.shields.io/badge/License-BSD-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-
-This repository contains template code for building a Chowdhury DSP
-audio plugin.
+A minimal audio plugin containing an [Ableton Link](https://github.com/Ableton/link) instance.
 
 ## Building
 
@@ -12,15 +8,10 @@ To build from scratch, you must have CMake installed.
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/Chowdhury-DSP/LinkTestPlugin.git
+$ git clone https://github.com/jatinchowdhury18/LinkTestPlugin.git
 $ cd LinkTestPlugin
 
 # build with CMake
 $ cmake -Bbuild
 $ cmake --build build --config Release
 ```
-
-## License
-
-LinkTestPlugin is open source, and is licensed under the BSD 3-clause license.
-Enjoy!
